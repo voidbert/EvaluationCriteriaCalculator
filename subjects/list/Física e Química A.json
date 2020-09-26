@@ -1,0 +1,37 @@
+{
+	"Insira todos os valores de 0 a 200 à exceção das minifichas" : {
+		"type" : "text"
+	},
+
+	"Ficha de avaliação" : {
+		"type" : "textbox",
+		"multiplier" : 0.35
+	},
+
+	"Minificha 1 (de 0 a 100)" : {
+		"type" : "textbox",
+		"multiplier" : 0.30,
+		"range" : [0, 100]
+	},
+
+	"Minificha 2 (de 0 a 100)" : {
+		"type" : "textbox",
+		"multiplier" : 0.30,
+		"range" : [0, 100]
+	},
+
+	"Ficha de avaliação laboratorial" : {
+		"type" : "textbox",
+		"multiplier" : 0.20
+	},
+
+	"Atividades exprimentais" : {
+		"type" : "textbox",
+		"multiplier" : 0.10
+	},
+
+	"Atitudes e valores" : {
+		"type" : "textbox",
+		"multiplier" : 0.05
+	}
+}

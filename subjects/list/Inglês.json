@@ -1,0 +1,35 @@
+{
+	"Insira todos os valores de 0 a 200" : {
+		"type" : "text"
+	},
+
+	"Listenings" : {
+		"type" : "textbox",
+		"multiplier" : 0.19
+	},
+
+	"Readings" : {
+		"type" : "textbox",
+		"multiplier" : 0.19
+	},
+
+	"Speakings" : {
+		"type" : "textbox",
+		"multiplier" : 0.19
+	},
+
+	"Writings" : {
+		"type" : "textbox",
+		"multiplier" : 0.19
+	},
+
+	"Grammars" : {
+		"type" : "textbox",
+		"multiplier" : 0.19
+	},
+
+	"Atitudes e valores" : {
+		"type" : "textbox",
+		"multiplier" : 0.05
+	}
+}

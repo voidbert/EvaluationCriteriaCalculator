@@ -1,0 +1,180 @@
+body {
+	/*Set the background and font colors of the page. A dark theme is used.*/
+	background-color: #121224;
+	color: white;
+}
+
+/*On landscape mode, divide the page in half vertically.*/
+#title-and-criteria {
+	width: 50%;
+}
+
+/*Overlay the 2nd half over the first*/
+#final-grade-container {
+	position: fixed;
+	top: 0px;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+
+	/*Center its contents vertically and horizontally.*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+/*The font size of the title is set dynamically by the window.js*/
+#title {
+	font-family: sans;
+	text-align: center;
+	white-space: nowrap;
+	margin: 0px;
+}
+
+/*Center the select element*/
+#choice-container {
+	text-align: center;
+}
+
+/*Personalize the select element*/
+#choice {
+	font-family: sans;
+	font-size: 12pt;
+	text-align: center;
+	/*Used to center the text in chrome*/
+	text-align-last: center;
+
+	padding: 3pt;
+	margin-top: 5pt;
+	border: none;
+
+	background-color: #00b9b9;
+
+	/*Remove the default arrow.*/
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+
+	/*Use a custom arrow and position it*/
+	background-image: url("../graphics/arrow.svg");
+	background-position: right 10px top 50%;
+	background-repeat: no-repeat;
+	background-size: 10px;
+	padding-right: 30px;
+
+	width: 80%;
+}
+
+/*On touch devices, make the select font bigger and increase the size of the arrow*/
+@media (pointer:none), (pointer:coarse) {
+	#choice {
+		font-size: 1cm;
+
+		background-position: right 0.5cm top 50%;
+		background-size: 0.5cm;
+		padding-right: 1.5cm;
+	}
+}
+
+#choose-a-subject {
+	/*Don't present "Choose a subject" as an option for the user to choose from. Just make it
+	the initial value of the select element.*/
+	display: none;
+}
+
+option {
+	font-family: sans;
+	font-size: 12pt;
+	
+	/*This won't work on all browsers but at least it works in some of them. For other browsers,
+	researched showed that this is not possible without creating a custom select element. The system
+	one can't be modified.*/
+	background-color: #00b9b9;
+}
+
+/*The font size of this element is set dynamically by the window.js*/
+#final-grade-title {
+	font-family: sans;
+	text-align: center;
+}
+
+/*This element is hidden after a subject is chosen and a final grade can be presented.*/
+#choose-first {
+	font-family: sans;
+	font-size: 12pt;
+	text-align: center;
+}
+
+/*The display property is changed when the error needs to be shown. By default, it's none and the
+error isn't displayed.*/
+#nan-error {
+	font-family: sans;
+	font-size: 12pt;
+	text-align: center;
+
+	font-weight: bold;
+	color: #ff0000;
+
+	display: none;
+}
+
+#final-grade {
+	font-family: sans;
+	font-size: 12pt;
+	text-align: center;
+
+	/*The display property is used to edit the visibility of this element.*/
+	display: none;
+}
+
+/*On mobile devices, use a bigger font for all messages*/
+@media (pointer:none), (pointer:coarse) {
+	#choose-first, #nan-error, #final-grade {
+		font-size: 1cm;
+	}
+}
+
+.criteria {
+	/*Use a default font for the evaluation criteria*/
+	font-family: sans;
+	font-size: 12pt;
+	text-align: justify;
+
+	/*Separate criteria from one another*/
+	margin-top: 10pt;
+	margin-bottom: 10pt;
+}
+
+/*On touch devices, use a bigger font size and bigger margins*/
+@media (pointer:none), (pointer:coarse) {
+	.criteria {
+		font-size: 0.75cm;
+
+		margin-top: 1cm;
+		margin-bottom: 1cm;
+	}
+}
+
+input {
+	font-family: sans;
+	font-size: 12pt;
+	background-color: #00b9b9;
+	border: 2pt solid #005050;
+
+	width: calc(100% - 5pt);
+	margin-right: 5pt;
+
+	/*Remove the default text box appearance on all browsers.*/
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+/*On mobile devices, use a bigger font a a thicker border*/
+@media (pointer:none), (pointer:coarse) {
+	input {
+		font-size: 1cm;
+		border: 0.25cm solid #005050;
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"Insira todos os valores de 0 a 200" : {
+		"type" : "text"
+	},
+
+	"Ficha de avaliação sumativa 1" : {
+		"type" : "textbox",
+		"multiplier" : 0.425
+	},
+
+	"Ficha de avaliação sumativa 2" : {
+		"type" : "textbox",
+		"multiplier" : 0.425
+	},
+
+	"Trabalhos individuais / Questões-aula / Fichas de trabalho" : {
+		"type" : "textbox",
+		"multiplier" : 0.1
+	},
+
+	"Atitudes e valores" : {
+		"type" : "textbox",
+		"multiplier" : 0.05
+	}
+}

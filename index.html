@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+
+		<title>Critérios de avaliação</title>
+		<link rel="icon" type="image/png" href="graphics/favicon.png"/>
+
+		<!--Import a different style sheet depending on the screen orientation.-->
+		<link rel="stylesheet" type="text/css" href="styles/landscape.css"
+			media="screen and (orientation: landscape)"/>
+		<link rel="stylesheet" type="text/css" href="styles/portrait.css"
+			media="screen and (orientation: portrait)"/>
+
+		<script src="scripts/window.js" defer></script>
+		<script src="scripts/subjects.js" defer></script>
+		<script src="scripts/criteria.js" defer></script>
+		<script src="scripts/calculator.js" defer></script>
+	</head>
+
+	<body>
+		<div id="title-and-criteria">
+			<div id="title">Critérios de avaliação</div>
+			<div id="choice-container">
+				<select id="choice" onchange="onSubjectChosen()">
+					<option id="choose-a-subject">Escolha uma disciplina</option>
+				</select>
+			</div>
+			<div id="subject-container"></div>
+		</div>
+
+		<div id="final-grade-container">
+			<div id="final-grade-second-container">
+				<div id="final-grade-title">Nota final</div>
+				<div id="choose-first">Escolha uma disciplina antes de calcular a nota final</div>
+				<div id="nan-error">Um dos valores inseridos não é válido</div>
+				<div id="final-grade"></div>
+			</div>
+		</div>
+	</body>
+</html>

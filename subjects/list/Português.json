@@ -1,0 +1,40 @@
+{
+	"Insira todos os valores de 0 a 200" : {
+		"type" : "text"
+	},
+
+	"Ficha de avaliação sumativa 1" : {
+		"type" : "textbox",
+		"multiplier" : 0.35
+	},
+
+	"Ficha de avaliação sumativa 2" : {
+		"type" : "textbox",
+		"multiplier" : 0.35
+	},
+
+	"Compreensão oral" : {
+		"type" : "textbox",
+		"multiplier" : 0.05
+	},
+
+	"Expressão oral" : {
+		"type" : "textbox",
+		"multiplier" : 0.15
+	},
+
+	"Trabalho criativo" : {
+		"type" : "textbox",
+		"multiplier" : 0.025
+	},
+
+	"Projeto de leitura" : {
+		"type" : "textbox",
+		"multiplier" : 0.025
+	},
+
+	"Atitudes e valores" : {
+		"type" : "textbox",
+		"multiplier" : 0.05
+	}
+}
